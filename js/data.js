@@ -13,7 +13,8 @@
      results        — 2–3 quantified outcomes: { value: "3.0×", label: "what it measured" }
      tags           — short keywords shown as badges
      note           — (optional) small-print disclaimer shown under the tags
-     link           — (optional) { href: "assets/deck.pdf", text: "View the full deck (PDF)" }
+     link           — (optional) { href: "assets/case-studies/deck.pdf", text: "View the full deck", meta: "PDF, 200 KB" }
+                      Shown at the bottom of the left column, beside Results. Put PDFs in assets/case-studies/.
 
    All figures below come directly from the case study decks.
    ========================================================================== */
@@ -34,9 +35,8 @@ window.PORTFOLIO_PROJECTS = [
       { value: "51%", label: "of respondents are occasion-driven, the largest segment" }
     ],
     tags: ["Conjoint analysis", "Segmentation", "Hierarchical clustering", "Positioning"],
-    note: "MBA academic case using Enginius-provided data. Independently developed; not work performed for or endorsed by Kirin."
-    // TODO: To link the full deck, add the PDF to assets/ and uncomment:
-    // link: { href: "assets/Kirin_Product_Strategy_PMM_Portfolio.pdf", text: "View the full deck (PDF)" }
+    note: "MBA academic case using Enginius-provided data. Independently developed; not work performed for or endorsed by Kirin.",
+    link: { href: "assets/case-studies/kirin-conjoint-segmentation.pdf", text: "View the full deck", meta: "PDF, 600 KB" }
   },
   {
     title: "Bookbinders Club: Predictive Targeting for a Catalog Launch",
@@ -53,8 +53,8 @@ window.PORTFOLIO_PROJECTS = [
       { value: "+48%", label: "profit vs. mailing everyone, at 75% less spend (illustrative costs)" }
     ],
     tags: ["Predictive modeling", "Logistic regression", "Targeting", "Campaign analysis"],
-    note: "MBA case using Enginius predictive-modeling data. Accuracy and lift were measured in-sample; cost and margin figures are illustrative assumptions."
-    // link: { href: "assets/Bookbinders_Club_Predictive_Targeting_PMM_Portfolio.pdf", text: "View the full deck (PDF)" }
+    note: "MBA case using Enginius predictive-modeling data. Accuracy and lift were measured in-sample; cost and margin figures are illustrative assumptions.",
+    link: { href: "assets/case-studies/bookbinders-predictive-targeting.pdf", text: "View the full deck", meta: "PDF, 190 KB" }
   },
   {
     title: "Blue Apron: What Really Drives Social Engagement",
@@ -71,7 +71,7 @@ window.PORTFOLIO_PROJECTS = [
       { value: "4,179", label: "posts analyzed across 98 creator accounts" }
     ],
     tags: ["Panel regression", "Fixed effects", "Influencer marketing", "Social analytics"],
-    note: "MBA case applying Enginius panel-regression data to a Blue Apron question. The source data does not name Blue Apron, and engagement is a proxy for reach, not revenue."
-    // link: { href: "assets/Blue_Apron_Social_Engagement_Analysis.pdf", text: "View the full deck (PDF)" }
+    note: "MBA case applying Enginius panel-regression data to a Blue Apron question. The source data does not name Blue Apron, and engagement is a proxy for reach, not revenue.",
+    link: { href: "assets/case-studies/blue-apron-social-engagement.pdf", text: "View the full deck", meta: "PDF, 200 KB" }
   }
 ];

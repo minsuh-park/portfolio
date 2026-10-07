@@ -578,10 +578,23 @@ a:active {
   color: var(--color-muted);
 }
 
+.project__intro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .project__link {
-  display: inline-block;
-  margin-top: var(--space-4);
-  font-style: italic;
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+}
+
+.project__link-meta {
+  font-family: var(--font-mono);
+  font-size: var(--text-12);
+  font-weight: 400;
+  letter-spacing: 0;
+  opacity: 0.8;
 }
 
 @media (min-width: 900px) {
@@ -594,6 +607,15 @@ a:active {
   .project__title {
     font-size: var(--text-32);
     line-height: 1.2;
+  }
+
+  /* Push the deck link to the bottom of the column, beside Results */
+  .project__link {
+    margin-top: auto;
+  }
+
+  .project__note {
+    margin-bottom: var(--space-5);
   }
 }
 

@@ -46,6 +46,17 @@
 
       if (project.note) intro.appendChild(el("p", "project__note", project.note));
 
+      // Full deck link sits at the foot of the left column, level with Results
+      if (project.link && project.link.href) {
+        var link = el("a", "btn btn--outline project__link");
+        link.href = project.link.href;
+        link.appendChild(el("span", null, project.link.text || "View the full deck"));
+        if (project.link.meta) link.appendChild(el("span", "project__link-meta", project.link.meta));
+        link.setAttribute("aria-label", (project.link.text || "View the full deck") + ": " + project.title +
+          (project.link.meta ? " (" + project.link.meta + ")" : ""));
+        intro.appendChild(link);
+      }
+
       // Right column: problem, approach, results
       var details = el("div", "project__details");
 
@@ -75,11 +86,6 @@
         details.appendChild(resultsBlock);
       }
 
-      if (project.link && project.link.href) {
-        var link = el("a", "project__link", project.link.text || "Read the full case study");
-        link.href = project.link.href;
-        details.appendChild(link);
-      }
 
       article.appendChild(intro);
       article.appendChild(details);
