@@ -1,1 +1,16 @@
+# macOS
 .DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# Local / temporary
+*.log
+.env
+node_modules/

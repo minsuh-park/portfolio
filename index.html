@@ -1,229 +1,273 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Minsuh Park — Product Marketing &amp; Strategy</title>
-  <meta name="description" content="Portfolio of Minsuh Park, International MBA candidate at Hanyang University focused on product marketing, growth, and marketing analytics." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Mark that JS is available before first paint (used to collapse the mobile menu without a flash). -->
+  <script>document.documentElement.classList.add("js");</script>
+
+  <title>Minsuh Park — Product Marketing &amp; Marketing Analytics</title>
+  <meta name="description" content="Minsuh Park is an MBA candidate at Hanyang University (marketing &amp; international business) with a B.S. from UC Riverside, pursuing product marketing and marketing analytics roles in the US.">
+  <meta name="author" content="Minsuh Park">
+  <meta name="theme-color" content="#FFFFFF">
+  <meta name="color-scheme" content="light">
+
+  <!-- TODO: If you move the site (custom domain or a different repo name), update every URL below. -->
+  <link rel="canonical" href="https://minsuh-park.github.io/portfolio/">
+
+  <!-- Open Graph / social previews -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Minsuh Park">
+  <meta property="og:title" content="Minsuh Park — Product Marketing &amp; Marketing Analytics">
+  <meta property="og:description" content="MBA candidate turning customer data into positioning, pricing, and go-to-market decisions.">
+  <meta property="og:url" content="https://minsuh-park.github.io/portfolio/">
+  <meta property="og:locale" content="en_US">
+  <!-- TODO: Add a 1200×630 PNG preview at assets/og-image.png, then uncomment the two lines below. -->
+  <!-- <meta property="og:image" content="https://minsuh-park.github.io/portfolio/assets/og-image.png"> -->
+  <!-- <meta property="og:image:alt" content="Minsuh Park — Product Marketing & Marketing Analytics"> -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Minsuh Park — Product Marketing &amp; Marketing Analytics">
+  <meta name="twitter:description" content="MBA candidate turning customer data into positioning, pricing, and go-to-market decisions.">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <!-- Fonts: Playfair Display (display + text) and JetBrains Mono (technical tags) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Minsuh Park",
+    "url": "https://minsuh-park.github.io/portfolio/",
+    "jobTitle": "MBA Candidate — Marketing & International Business",
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "University of California, Riverside" },
+      { "@type": "CollegeOrUniversity", "name": "Hanyang University" }
+    ],
+    "knowsLanguage": ["en", "ko"],
+    "sameAs": [
+      "https://www.linkedin.com/in/minsuhppark/",
+      "https://github.com/minsuh-park"
+    ]
+  }
+  </script>
 </head>
 <body>
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header">
-    <div class="container nav-bar">
-      <a href="index.html" class="logo">Minsuh Park<span>.</span></a>
+    <div class="container site-header__inner">
+      <a class="wordmark" href="#top" aria-label="Minsuh Park, back to top">Minsuh Park</a>
 
-      <nav class="nav-links" id="primary-navigation" aria-label="Primary">
-        <a href="index.html" aria-current="page">Home</a>
-        <a href="product-marketing.html">Product Marketing</a>
-        <a href="mba-strategy.html">MBA Strategy</a>
-        <a href="projects.html">AI &amp; Projects</a>
-        <a href="certifications.html">Certifications</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle__label">Menu</span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul class="site-nav__list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </nav>
-
-      <div class="nav-cta">
-        <a href="contact.html" class="btn btn-secondary btn-sm">Get in touch</a>
-        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Toggle menu">
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-            <path d="M2.5 5H17.5M2.5 10H17.5M2.5 15H17.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
-          </svg>
-        </button>
-      </div>
     </div>
   </header>
 
-  <main id="main-content">
-    <!-- Hero -->
-    <section class="hero">
-      <div class="container hero-grid">
-        <p class="eyebrow">Product Marketing &middot; Strategy &middot; Analytics</p>
-        <h1 class="hero-headline">Turning customer insight into product and growth strategy.</h1>
-        <p class="lede">
-          I'm Minsuh Park, an International MBA candidate at Hanyang University pursuing
-          product marketing, product strategy, growth, and marketing analytics roles in the
-          United States. My work combines market and customer research, data-driven decision
-          making, and AI-assisted product development.
+  <main id="main" tabindex="-1">
+
+    <!-- ============================== HERO ============================== -->
+    <section id="top" class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <p class="eyebrow">Product Marketing <span aria-hidden="true">·</span> Marketing Analytics</p>
+        <h1 id="hero-title" class="hero__title">Minsuh <em>Park</em></h1>
+        <!-- TODO: Tune your one-line positioning statement. -->
+        <p class="hero__dek">Turning customer data into positioning, pricing, and go-to-market decisions.</p>
+        <p class="hero__meta">
+          MBA, Hanyang University <span aria-hidden="true">·</span>
+          B.S., UC Riverside <span aria-hidden="true">·</span>
+          English &amp; <span lang="ko">한국어</span>
         </p>
-        <div class="hero-actions btn-row">
-          <a href="product-marketing.html" class="btn btn-primary">View case studies</a>
-          <a href="contact.html" class="btn btn-secondary">Contact me</a>
-        </div>
-
-        <dl class="stat-row">
-          <div class="stat-item">
-            <dt>Program</dt>
-            <dd>International MBA, Hanyang University</dd>
-          </div>
-          <div class="stat-item">
-            <dt>Focus areas</dt>
-            <dd>Product Marketing &amp; Growth</dd>
-          </div>
-          <div class="stat-item">
-            <dt>Target market</dt>
-            <dd>United States</dd>
-          </div>
-          <div class="stat-item">
-            <dt>Availability</dt>
-            <dd class="placeholder">[REPLACE: availability / start date]</dd>
-          </div>
-        </dl>
-      </div>
-    </section>
-
-    <!-- Positioning -->
-    <section class="section-alt">
-      <div class="container">
-        <div class="section-header">
-          <p class="eyebrow">Positioning</p>
-          <h2>A blend of strategy, insight, and execution</h2>
-          <p class="lede">
-            My background spans marketing strategy, customer insight, marketing analytics, and
-            project management &mdash; increasingly applied alongside AI-assisted tools to move from
-            research to shipped product decisions faster.
-          </p>
-        </div>
-
-        <div class="grid grid--2col">
-          <div class="card">
-            <h3>Marketing strategy &amp; customer insight</h3>
-            <p class="body-text muted">
-              Researching markets and customers to inform positioning, messaging, and
-              go-to-market decisions.
-            </p>
-          </div>
-          <div class="card">
-            <h3>Marketing &amp; product analytics</h3>
-            <p class="body-text muted">
-              Using data to evaluate strategy options, track performance, and support
-              decision-making with evidence.
-            </p>
-          </div>
-          <div class="card">
-            <h3>Project &amp; program management</h3>
-            <p class="body-text muted">
-              Structuring ambiguous problems into scoped plans and coordinating execution
-              across stakeholders.
-            </p>
-          </div>
-          <div class="card">
-            <h3>AI-assisted product development</h3>
-            <p class="body-text muted">
-              Applying AI tools to prototype, analyze, and accelerate product and marketing
-              work &mdash; documented in the AI &amp; personal projects section.
-            </p>
-          </div>
+        <div class="hero__actions">
+          <a class="btn btn--solid" href="#work">View Work</a>
+          <a class="btn btn--outline" href="#contact">Contact</a>
         </div>
       </div>
     </section>
 
-    <!-- Section previews -->
-    <section>
+    <!-- ============================== ABOUT ============================== -->
+    <section id="about" class="section" aria-labelledby="about-title">
       <div class="container">
-        <div class="section-header section-header--row">
-          <div>
-            <p class="eyebrow">Selected Work</p>
-            <h2>Explore the case studies</h2>
+        <header class="section-head">
+          <span class="section-head__num" aria-hidden="true">01</span>
+          <h2 id="about-title">About</h2>
+        </header>
+
+        <div class="about">
+          <div class="about__body prose">
+            <!-- TODO: Personalize your bio. -->
+            <p class="lead">I'm an MBA candidate at Hanyang University, concentrating in marketing and international business, with a B.S. from the University of California, Riverside. I'm drawn to the place where customer insight meets commercial decisions: who a product is for, why they'd choose it, and what it should cost.</p>
+            <p>My toolkit is quantitative. I use segmentation, conjoint analysis, regression, and predictive modeling to find out what customers value, and consumer research to understand why. Before business school I spent time in wireless retail, where upselling on the sales floor taught me how buyers really make trade-offs. That instinct still shapes how I read a dataset.</p>
+            <p>I manage projects end to end, from framing the question and designing the research to presenting a recommendation. I work fluently in English and Korean. I'm now looking for product marketing and marketing analytics roles in the United States.</p>
           </div>
-          <a href="product-marketing.html" class="pill-link">See all work &rarr;</a>
+
+          <aside class="about__aside" aria-label="At a glance">
+            <dl class="facts">
+              <div><dt>Focus</dt><dd>Product marketing, marketing analytics</dd></div>
+              <div><dt>Education</dt><dd>MBA, Hanyang University<br>B.S., UC Riverside</dd></div>
+              <div><dt>Languages</dt><dd>English, <span lang="ko">한국어</span> (Korean)</dd></div>
+              <!-- TODO: Update your location and work-authorization note if you want to show them. -->
+              <div><dt>Seeking</dt><dd>Roles in the United States</dd></div>
+            </dl>
+          </aside>
         </div>
+      </div>
+    </section>
 
-        <div class="grid">
-          <article class="card case-study-card">
-            <div class="card-top">
-              <span class="tag">Product Marketing</span>
-              <span class="status status-progress">In Progress</span>
-            </div>
-            <div class="card-body">
-              <h3><span class="placeholder">[REPLACE: case study title]</span></h3>
-              <p><span class="placeholder">[REPLACE: one- to two-line summary of the challenge and approach]</span></p>
-            </div>
-            <div class="card-meta">
-              <span class="muted" style="font-size: var(--fs-small);">Product Marketing</span>
-              <a href="product-marketing.html" class="card-link">Read case study &rarr;</a>
-            </div>
-          </article>
+    <!-- ============================== WORK ============================== -->
+    <section id="work" class="section" aria-labelledby="work-title">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-head__num" aria-hidden="true">02</span>
+          <h2 id="work-title">Selected Work</h2>
+        </header>
+        <p class="section-intro">Case studies in segmentation, pricing research, and predictive modeling.</p>
 
-          <article class="card case-study-card">
-            <div class="card-top">
-              <span class="tag">MBA Strategy</span>
-              <span class="status status-academic">Academic</span>
-            </div>
-            <div class="card-body">
-              <h3><span class="placeholder">[REPLACE: case study title]</span></h3>
-              <p><span class="placeholder">[REPLACE: one- to two-line summary of the analysis and outcome]</span></p>
-            </div>
-            <div class="card-meta">
-              <span class="muted" style="font-size: var(--fs-small);">MBA Strategy &amp; Analytics</span>
-              <a href="mba-strategy.html" class="card-link">Read case study &rarr;</a>
-            </div>
-          </article>
+        <!-- Project cards are rendered from js/data.js. TODO: Edit your projects there, not here. -->
+        <div id="projects" class="projects"></div>
+        <noscript>
+          <p class="section-intro">Please enable JavaScript to view the case studies, or <a href="#contact">get in touch</a> and I'll send them over.</p>
+        </noscript>
+      </div>
+    </section>
 
-          <article class="card project-card">
-            <div class="card-top">
-              <span class="tag">AI &amp; Personal Project</span>
-              <span class="status status-progress">In Progress</span>
-            </div>
-            <div class="card-body">
-              <h3><span class="placeholder">[REPLACE: project title]</span></h3>
-              <p><span class="placeholder">[REPLACE: what the project does and why you built it]</span></p>
-            </div>
-            <div class="card-meta">
-              <span class="muted" style="font-size: var(--fs-small);">Personal Project</span>
-              <a href="projects.html" class="card-link">View project &rarr;</a>
-            </div>
-          </article>
+    <!-- ============================== SKILLS ============================== -->
+    <section id="skills" class="section" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-head__num" aria-hidden="true">03</span>
+          <h2 id="skills-title">Skills</h2>
+        </header>
+
+        <!-- TODO: Add or remove skills. Use class "badge badge--mono" for technical tools. -->
+        <div class="skills">
+          <div class="skill-group">
+            <h3>Analytics</h3>
+            <ul class="badges">
+              <li class="badge badge--mono">Excel</li>
+              <li class="badge badge--mono">SQL</li>
+              <li class="badge">Regression</li>
+              <li class="badge">Conjoint analysis</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Tools</h3>
+            <ul class="badges">
+              <li class="badge badge--mono">GA4</li>
+              <li class="badge badge--mono">Python</li>
+              <li class="badge badge--mono">Tableau</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Marketing</h3>
+            <ul class="badges">
+              <li class="badge">Segmentation</li>
+              <li class="badge">Positioning</li>
+              <li class="badge">Campaign analysis</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Languages</h3>
+            <ul class="badges">
+              <!-- TODO: Add proficiency if you like, e.g. "English — native". -->
+              <li class="badge">English</li>
+              <li class="badge"><span lang="ko">한국어</span> Korean</li>
+            </ul>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <!-- ======================= EXPERIENCE & EDUCATION ======================= -->
+    <section id="experience" class="section" aria-labelledby="experience-title">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-head__num" aria-hidden="true">04</span>
+          <h2 id="experience-title">Experience &amp; Education</h2>
+        </header>
+
+        <!-- TODO: Replace every "20XX" with real dates, and fill in employer / major details. -->
+        <ol class="timeline">
+          <li class="timeline__item">
+            <p class="timeline__date"><time>20XX</time> – <time>20XX</time></p>
+            <h3 class="timeline__title">B.S., University of California, Riverside</h3>
+            <!-- TODO: Add your major / minor. -->
+            <p class="timeline__org">Undergraduate studies · Riverside, California</p>
+            <p>Studied in the University of California system, where I built my foundation in quantitative analysis and research methods.</p>
+          </li>
+          <li class="timeline__item">
+            <p class="timeline__date"><time>20XX</time> – <time>20XX</time></p>
+            <h3 class="timeline__title">Wireless Sales Consultant</h3>
+            <!-- TODO: Add the company name and location. -->
+            <p class="timeline__org">Wireless retail</p>
+            <p>Advised customers on devices and plans and consistently upsold accessories, protection, and plan upgrades. This was first-hand training in needs-based selling and how buyers weigh price against value.</p>
+          </li>
+          <li class="timeline__item">
+            <p class="timeline__date"><time>20XX</time> – <time>20XX</time></p>
+            <h3 class="timeline__title">Marketing Project Work</h3>
+            <!-- TODO: Name the clients, courses, or organizations involved. -->
+            <p class="timeline__org">Consumer research &amp; analytics projects</p>
+            <p>Led research and analytics projects covering segmentation, conjoint-based pricing studies, and campaign analysis, from scoping the question through to the final recommendation.</p>
+          </li>
+          <li class="timeline__item timeline__item--current">
+            <p class="timeline__date"><time>20XX</time> – Present</p>
+            <h3 class="timeline__title">MBA, Hanyang University</h3>
+            <p class="timeline__org">Marketing &amp; International Business · Seoul</p>
+            <p>Graduate coursework in marketing strategy, marketing analytics, and international business, with a focus on bringing products to new markets.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============================== CONTACT ============================== -->
+    <section id="contact" class="section section--contact" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-head__num" aria-hidden="true">05</span>
+          <h2 id="contact-title">Contact</h2>
+        </header>
+
+        <p class="contact__statement">Hiring for product marketing or marketing analytics? I'd love to hear about it.</p>
+
+        <p class="contact__email">
+          <a href="mailto:minsuhpark0903@gmail.com">minsuhpark0903@gmail.com</a>
+        </p>
+
+        <ul class="contact__links">
+          <li><a href="https://www.linkedin.com/in/minsuhppark/" rel="me">LinkedIn</a></li>
+          <!-- TODO: Confirm your GitHub profile URL. -->
+          <li><a href="https://github.com/minsuh-park" rel="me">GitHub</a></li>
+          <!-- TODO: Optional, link a résumé PDF, e.g. <li><a href="assets/resume.pdf">Résumé (PDF)</a></li> -->
+        </ul>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <div class="logo">Minsuh Park<span>.</span></div>
-          <p>Product marketing, strategy, and analytics &mdash; building at the intersection of customer insight and AI-assisted product development.</p>
-        </div>
-        <div class="footer-links">
-          <div class="footer-col">
-            <h4>Site</h4>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="product-marketing.html">Product Marketing</a></li>
-              <li><a href="mba-strategy.html">MBA Strategy</a></li>
-              <li><a href="projects.html">AI &amp; Projects</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>More</h4>
-            <ul>
-              <li><a href="certifications.html">Certifications</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>Connect</h4>
-            <ul>
-              <li><a href="mailto:[REPLACE: email address]">Email</a></li>
-              <li><a href="[REPLACE: LinkedIn URL]">LinkedIn</a></li>
-              <li><a href="[REPLACE: resume file link]">Resume (PDF)</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 Minsuh Park. Built with vanilla HTML, CSS, and JavaScript.</p>
-      </div>
+    <div class="container site-footer__inner">
+      <p>© <span id="year">2026</span> Minsuh Park</p>
+      <p class="site-footer__colophon">Set in <em>Playfair Display</em> &amp; <span class="mono">JetBrains Mono</span></p>
     </div>
   </footer>
 
+  <script src="js/data.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
