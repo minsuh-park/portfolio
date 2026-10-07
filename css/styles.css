@@ -658,7 +658,35 @@ a:active {
   letter-spacing: -0.01em;
 }
 
+.certs {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.cert__title {
+  font-size: var(--text-16);
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.cert__meta {
+  margin-top: var(--space-1);
+  font-size: var(--text-14);
+  line-height: var(--leading-small);
+  color: var(--color-muted);
+}
+
+.cert__meta a {
+  display: inline-block;
+  padding-block: 2px;
+  color: var(--color-text);
+}
+
 @media (min-width: 768px) {
+  .skill-group--wide {
+    grid-column: 1 / -1;
+  }
+
   .skills {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: var(--space-6) calc(var(--space-6) * 2);
