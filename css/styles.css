@@ -570,6 +570,14 @@ a:active {
   margin-top: var(--space-4);
 }
 
+.project__note {
+  margin-top: var(--space-4);
+  font-size: var(--text-14);
+  font-style: italic;
+  line-height: var(--leading-small);
+  color: var(--color-muted);
+}
+
 .project__link {
   display: inline-block;
   margin-top: var(--space-4);

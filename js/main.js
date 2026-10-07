@@ -44,10 +44,16 @@
         intro.appendChild(tags);
       }
 
+      if (project.note) intro.appendChild(el("p", "project__note", project.note));
+
       // Right column: problem, approach, results
       var details = el("div", "project__details");
 
-      [["Problem", project.problem], ["Approach", project.approach]].forEach(function (pair) {
+      [
+        ["Problem", project.problem],
+        ["Approach", project.approach],
+        ["Recommendation", project.recommendation]
+      ].forEach(function (pair) {
         if (!pair[1]) return;
         var block = el("div", "project__block");
         block.appendChild(el("h4", "project__label", pair[0]));

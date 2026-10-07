@@ -5,63 +5,73 @@
    Each object below becomes one case study, in the order listed.
 
    Fields:
-     title    — case study headline
-     summary  — one-line italic standfirst under the title
-     problem  — the business question
-     approach — what you did and which methods you used
-     results  — 2–3 quantified outcomes: { value: "+18%", label: "what it measured" }
-     tags     — short keywords shown as badges
-     link     — (optional) { href: "...", text: "Read the full case study" }
+     title          — case study headline
+     summary        — one-line italic standfirst under the title
+     problem        — the business question
+     approach       — what you did and which methods you used
+     recommendation — (optional) the decision you recommended
+     results        — 2–3 quantified outcomes: { value: "3.0×", label: "what it measured" }
+     tags           — short keywords shown as badges
+     note           — (optional) small-print disclaimer shown under the tags
+     link           — (optional) { href: "assets/deck.pdf", text: "View the full deck (PDF)" }
 
-   TODO: Every project below is a PLACEHOLDER with illustrative numbers.
-         Replace each one with your real work before sharing the site.
+   All figures below come directly from the case study decks.
    ========================================================================== */
 
 window.PORTFOLIO_PROJECTS = [
   {
-    // TODO: Replace with a real project.
-    title: "Segmenting a Wireless Customer Base for Upsell",
-    summary: "Finding the customers most likely to upgrade and what to offer them.",
+    title: "Kirin: Turning Customer Preferences into Product Strategy",
+    summary: "Which product profile and customer segment should a new beer target?",
     problem:
-      "A wireless retailer pitched the same upgrade offers to every customer, so attach rates were flat and promotional spend was wasted on low-intent buyers.",
+      "Kirin sits mid-pack in a crowded import beer market, holding a 12.9% share of preference against 17.2% for the leading brands. Should it launch a new beer, and if so, which product profile and segment should it target?",
     approach:
-      "Cleaned 12 months of transaction data in SQL, then built behavioral segments with k-means clustering in Python on usage, tenure, and device age. Each segment got a tailored offer and talk track.",
+      "Segmented 317 respondents with hierarchical clustering, finding three behavioral segments. Then used conjoint analysis across 7 attributes and 21 levels to measure customer trade-offs and simulate share of preference for a new concept against 7 competitors.",
+    recommendation:
+      "Lead positioning with calorie-conscious, Japanese-heritage, occasion-based cues rather than packaging or glass redesign. Re-test the full-bodied recipe with the occasion-driven majority before committing launch resources.",
     results: [
-      { value: "+18%", label: "accessory attach rate in pilot stores" },
-      { value: "5", label: "actionable segments adopted by sales team" },
-      { value: "−12%", label: "promotional spend per upgrade" }
+      { value: "23.2%", label: "simulated family share of preference, up from 12.9% (+10.3 pts)" },
+      { value: "17.7%", label: "of preference driven by calories, the top attribute" },
+      { value: "51%", label: "of respondents are occasion-driven, the largest segment" }
     ],
-    tags: ["Segmentation", "SQL", "Python", "Clustering"]
-    // link: { href: "https://example.com", text: "Read the full case study" }
+    tags: ["Conjoint analysis", "Segmentation", "Hierarchical clustering", "Positioning"],
+    note: "MBA academic case using Enginius-provided data. Independently developed; not work performed for or endorsed by Kirin."
+    // TODO: To link the full deck, add the PDF to assets/ and uncomment:
+    // link: { href: "assets/Kirin_Product_Strategy_PMM_Portfolio.pdf", text: "View the full deck (PDF)" }
   },
   {
-    // TODO: Replace with a real project.
-    title: "Pricing a Premium Tier with Conjoint Analysis",
-    summary: "Measuring what customers would actually pay for before launch.",
+    title: "Bookbinders Club: Predictive Targeting for a Catalog Launch",
+    summary: "Deciding who should receive a catalog for a new art title.",
     problem:
-      "A subscription product planned a premium tier but had no evidence for which features to include or where to set the price.",
+      "A direct-mail book club mails its whole customer file for every new title, but only 25% of customers respond. Three in four catalogs produce no sale.",
     approach:
-      "Designed and fielded a choice-based conjoint survey (n = 300), estimated part-worth utilities, and ran market simulations to compare bundle and price scenarios against competitors.",
+      "Built a logistic regression response model on 1,600 customers' purchase histories (10 predictors). Scored and ranked the file by predicted response probability, then tested mailing cutoffs against breakeven campaign economics.",
+    recommendation:
+      "Mail the top 25% of the ranked file in two tiers and route the rest to a lower-cost channel such as email. Validate on a holdout sample and pilot in one region before committing the full budget.",
     results: [
-      { value: "$14.99", label: "recommended price point" },
-      { value: "+9%", label: "projected revenue vs. original plan" },
-      { value: "3 of 7", label: "features shown to drive willingness to pay" }
+      { value: "3.0×", label: "lift over random targeting in the top 10% of the list" },
+      { value: "86.5%", label: "predicted response in the top 5%, vs. 14.7% in the bottom 75%" },
+      { value: "+48%", label: "profit vs. mailing everyone, at 75% less spend (illustrative costs)" }
     ],
-    tags: ["Conjoint", "Pricing", "Consumer research", "Excel"]
+    tags: ["Predictive modeling", "Logistic regression", "Targeting", "Campaign analysis"],
+    note: "MBA case using Enginius predictive-modeling data. Accuracy and lift were measured in-sample; cost and margin figures are illustrative assumptions."
+    // link: { href: "assets/Bookbinders_Club_Predictive_Targeting_PMM_Portfolio.pdf", text: "View the full deck (PDF)" }
   },
   {
-    // TODO: Replace with a real project.
-    title: "Predicting Campaign Response for a US Market Entry",
-    summary: "Helping a Korean consumer brand spend its launch budget where it converts.",
+    title: "Blue Apron: What Really Drives Social Engagement",
+    summary: "Is engagement driven by what gets posted, or by who posts it?",
     problem:
-      "A Korean brand entering the US needed to decide which audiences and channels deserved its limited launch budget.",
+      "Influencer marketing budgets often go toward better content mechanics: hashtags, captions, photos. Do those actually move engagement, or does the creator matter more?",
     approach:
-      "Combined GA4 web analytics with campaign data, built a logistic regression model to predict conversion likelihood, and tracked performance by audience in a Tableau dashboard.",
+      "Analyzed 4,179 posts from 98 creator accounts with panel regression. A Hausman test (p < 0.001) ruled out random effects, so I used a fixed-effects model to separate post-level factors from account-level effects.",
+    recommendation:
+      "Spend efficiency depends on who you partner with, not how they post. Pilot a budget shift toward top-quartile creators against a control group, and judge it on attributed signups per dollar rather than engagement alone.",
     results: [
-      { value: "2.1×", label: "conversion rate in top-decile audience" },
-      { value: "−22%", label: "customer acquisition cost" },
-      { value: "0.78", label: "model AUC on holdout data" }
+      { value: "~24 pts", label: "engagement-rate spread between the highest and lowest account effects" },
+      { value: "0 of 4", label: "content mechanics (length, hashtags, photo, mentions) significant at 5%" },
+      { value: "4,179", label: "posts analyzed across 98 creator accounts" }
     ],
-    tags: ["Predictive modeling", "Regression", "GA4", "Tableau"]
+    tags: ["Panel regression", "Fixed effects", "Influencer marketing", "Social analytics"],
+    note: "MBA case applying Enginius panel-regression data to a Blue Apron question. The source data does not name Blue Apron, and engagement is a proxy for reach, not revenue."
+    // link: { href: "assets/Blue_Apron_Social_Engagement_Analysis.pdf", text: "View the full deck (PDF)" }
   }
 ];
