@@ -774,7 +774,7 @@ a:active {
   font-weight: 600;
 }
 
-.not-found p {
+.not-found p:not(.not-found__code) {
   max-width: 40ch;
   margin-top: var(--space-4);
   font-size: var(--text-20);
