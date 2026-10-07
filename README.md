@@ -68,6 +68,8 @@ git push
 
 GitHub Pages rebuilds automatically, usually within a minute.
 
+**Changed CSS or JS?** Increase the `?v=` number on the stylesheet and script tags in `index.html` (and the stylesheet in `404.html`). GitHub Pages lets browsers cache files for 10 minutes, so without a new version number, returning visitors may see the old files. Content-only edits in `index.html` don't need this.
+
 ## Accessibility
 
 The site targets WCAG 2.2 AA:
