@@ -54,7 +54,7 @@ window.PORTFOLIO_PROJECTS = [
     ],
     tags: ["Predictive modeling", "Logistic regression", "Targeting", "Campaign analysis"],
     note: "MBA case using Enginius predictive-modeling data. Accuracy and lift were measured in-sample; cost and margin figures are illustrative assumptions.",
-    link: { href: "assets/case-studies/bookbinders-predictive-targeting.pdf", text: "View the full deck", meta: "PDF, 190 KB" }
+    link: { href: "assets/case-studies/bookbinders-predictive-targeting.pdf?v=2", text: "View the full deck", meta: "PDF, 190 KB" }
   },
   {
     title: "Blue Apron: What Really Drives Social Engagement",
@@ -72,6 +72,6 @@ window.PORTFOLIO_PROJECTS = [
     ],
     tags: ["Panel regression", "Fixed effects", "Influencer marketing", "Social analytics"],
     note: "MBA case applying Enginius panel-regression data to a Blue Apron question. The source data does not name Blue Apron, and engagement is a proxy for reach, not revenue.",
-    link: { href: "assets/case-studies/blue-apron-social-engagement.pdf", text: "View the full deck", meta: "PDF, 200 KB" }
+    link: { href: "assets/case-studies/blue-apron-social-engagement.pdf?v=2", text: "View the full deck", meta: "PDF, 200 KB" }
   }
 ];
