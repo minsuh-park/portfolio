@@ -650,7 +650,7 @@ a:active {
 /* Amber fill; hover inverts to ink like the other buttons */
 .btn.project__link {
   background: var(--color-accent);
-  border-color: var(--color-accent);
+  border-color: var(--color-text); /* visible ink outline around the amber fill */
   color: var(--color-text);
 }
 
