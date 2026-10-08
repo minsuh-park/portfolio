@@ -350,6 +350,28 @@ a:active {
   transform: translateY(1px);
 }
 
+/* Small mono label inside a button, e.g. "PDF" or "Coming soon" */
+.btn__meta {
+  margin-left: var(--space-3);
+  font-family: var(--font-mono);
+  font-size: var(--text-12);
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+/* Placeholder button: not a link, no hover or press effect */
+.btn--disabled {
+  color: var(--color-muted);
+  border-color: var(--color-muted);
+  border-style: dashed;
+  background: transparent;
+  cursor: default;
+}
+
+.btn--disabled:active {
+  transform: none;
+}
+
 .btn:focus-visible {
   outline-offset: 4px;
 }
