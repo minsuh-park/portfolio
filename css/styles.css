@@ -417,10 +417,6 @@ a:active {
   letter-spacing: -0.025em;
 }
 
-.hero__title em {
-  font-weight: 400;
-}
-
 .hero__dek {
   max-width: 30ch;
   margin-top: var(--space-5);
